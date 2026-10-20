@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -13,18 +12,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+
+  <!-- Penyesuaian tampilan foto -->
+  <style>
+    .brand-logo-img {
+      width: 46px;
+      height: 46px;
+      object-fit: contain;
+      background: #fff;
+      border-radius: 50%;
+      padding: 4px;
+      flex-shrink: 0;
+    }
+    .hero-photo {
+      overflow: hidden;
+    }
+    .hero-photo > img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+    }
+  </style>
 </head>
 <body>
 
   <!-- NAVBAR -->
   <header class="navbar">
     <a class="brand" href="#beranda">
-      
-<img
-  class="brand-logo-img"
-  src="images/logo-sekolah.png"
-  alt="Logo SMK Muhammadiyah 1 Kota Sukabumi"
->
+      <img
+        class="brand-logo-img"
+        src="images/logo-sekolah.png"
+        alt="Logo SMK Muhammadiyah 1 Kota Sukabumi"
+      >
       <div>
         <strong>SMK Muhammadiyah 1</strong>
         <span>Kota Sukabumi</span>
@@ -46,15 +67,16 @@
 
     <!-- HERO -->
     <section class="hero" id="beranda">
-      
-<div class="hero-art hero-photo">
-  <img
-    src="images/gedung-sekolah.jpg"
-    alt="Gedung SMK Muhammadiyah 1 Kota Sukabumi"
-  >
-</div>
 
+      <!-- FOTO GEDUNG SEKOLAH -->
+      <div class="hero-art hero-photo">
+        <img
+          src="images/gedung-sekolah.jpg"
+          alt="Gedung SMK Muhammadiyah 1 Kota Sukabumi"
+        >
+      </div>
 
+      <div class="hero-content">
         <h1>
           SMK Muhammadiyah 1<br>
           <span>Kota Sukabumi</span>
@@ -78,45 +100,6 @@
           <span>✓</span> Religius
           <span>✓</span> Berkarakter
           <span>✓</span> Berprestasi
-        </div>
-      </div>
-
-      <!-- ILUSTRASI SEKOLAH -->
-      <div class="hero-art">
-        <div class="ocean-circle circle-one"></div>
-        <div class="ocean-circle circle-two"></div>
-
-        <div class="school-illustration">
-          <div class="school-sky">☀</div>
-
-          <div class="school-building">
-            <div class="roof"></div>
-
-            <div class="school-sign">
-              SMK MUHAMMADIYAH 1<br>
-              <small>KOTA SUKABUMI</small>
-            </div>
-
-            <div class="school-windows">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-
-            <div class="school-door"></div>
-          </div>
-
-          <div class="plant plant-left">🌿</div>
-          <div class="plant plant-right">🌴</div>
-        </div>
-
-        <div class="floating-card">
-          <span class="floating-icon">🎓</span>
-          <div>
-            <strong>Masa Depan Cerah</strong>
-            <small>Mulai dari pendidikan</small>
-          </div>
         </div>
       </div>
     </section>
@@ -262,7 +245,11 @@
   <!-- FOOTER -->
   <footer class="footer">
     <a class="brand footer-brand" href="#beranda">
-      <div class="brand-logo">✿</div>
+      <img
+        class="brand-logo-img"
+        src="images/logo-sekolah.png"
+        alt="Logo SMK Muhammadiyah 1 Kota Sukabumi"
+      >
       <div>
         <strong>SMK Muhammadiyah 1</strong>
         <span>Kota Sukabumi</span>
